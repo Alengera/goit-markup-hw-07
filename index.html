@@ -26,6 +26,7 @@
 
   <body>
     <!--====== HEADER=======> -->
+
     <header class="page-header">
       <div class="container header-container">
         <nav class="page-nav">
@@ -45,6 +46,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list list">
             <li class="address-list-item">
@@ -60,6 +62,82 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container is-open">
+        <div class="container mobile-menu-container">
+          <button
+            type="button"
+            class="mobile-menu-close modal-close-button js-close-menu"
+          >
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href=""
+                ><span class="mobile-menu-text">Contacts</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list mobile-address-list">
+            <li class="address-list-item">
+              <a class="menu-phone-number link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a class="menu-email link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-socials-list">
+            <li class="menu-socials-item">
+              <a class="socials-link" href="#">
+                <svg class="socials-icon" width="40" height="40">
+                  <use href="./images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-socials-item">
+              <a class="socials-link" href="#">
+                <svg class="socials-icon">
+                  <use href="./images/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-item">
+              <a class="socials-link" href="#">
+                <svg class="socials-icon">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-socials-item">
+              <a class="socials-link" href="#">
+                <svg class="socials-icon">
+                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Golovna chastyna -->
@@ -82,7 +160,7 @@
           <ul class="section-list list">
             <li class="features-item">
               <div class="features-box">
-                <svg width="64" height="64">
+                <svg class="features-img" width="64" height="64">
                   <use href="./images/icons/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -94,7 +172,7 @@
             </li>
             <li class="features-item">
               <div class="features-box">
-                <svg width="64" height="64">
+                <svg class="features-img" width="64" height="64">
                   <use href="./images/icons/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -106,7 +184,7 @@
             </li>
             <li class="features-item">
               <div class="features-box">
-                <svg width="64" height="64">
+                <svg class="features-img" width="64" height="64">
                   <use href="./images/icons/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -118,7 +196,7 @@
             </li>
             <li class="features-item">
               <div class="features-box">
-                <svg width="64" height="64">
+                <svg class="features-img" width="64" height="64">
                   <use href="./images/icons/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -162,9 +240,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section 3 -->
-      <section class="team">
+     <section class="team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-list list">
@@ -365,8 +443,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- =========SECTION 4 ========================== -->
+      </section> 
+      <!-- =========SECTION 4 ==========================  -->
 
       <section class="customers">
         <div class="container">
@@ -421,10 +499,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--=======FOOTER================== -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-text-container">
           <a class="logo link" href="./index.html">
@@ -495,44 +573,78 @@
             <use href="./images/icons/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-         <p class="modal-text">Leave your contacts and we will call you back</p>
-         <form class="modal-form">
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
           <div class="form-input-container">
             <label class="modal-field" for="name">Name</label>
-           <input class="modal-field-input" type="text" name="name" id="name" required pattern="[a-zA-Z]+"> 
+            <input
+              class="modal-field-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+              pattern="[a-zA-Z]+"
+            />
             <svg class="modal-field-icon" width="18" height="24">
-            <use href="./images/icons/icons.svg#icon-person"></use>
-          </svg>
+              <use href="./images/icons/icons.svg#icon-person"></use>
+            </svg>
           </div>
-           <div class="form-input-container">
+          <div class="form-input-container">
             <label class="modal-field" for="phone">Phone</label>
-           <input class="modal-field-input" type="tel" name="phone" id="phone" required pattern="[0-9]+"> 
+            <input
+              class="modal-field-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              pattern="[0-9]+"
+            />
             <svg class="modal-field-icon" width="18" height="24">
-            <use href="./images/icons/icons.svg#icon-phone"></use>
-          </svg>
-          </div>
-      
-           <div class="form-input-container">
-            <label class="modal-field" for="email">Email</label>
-           <input class="modal-field-input" type="email" name="email" id="email" required> 
-            <svg class="modal-field-icon" width="18" height="24">
-            <use href="./images/icons/icons.svg#icon-email"></use>
-          </svg>
-          </div>
-          <div class="form-input-container container-textarea">
-            <label class="modal-field"  for="comment">Comment</label>
-                 <textarea class="comment" name="comment" id="comment"  placeholder="Text input"></textarea>
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
           </div>
 
-            <div class="user-policy">
-               <input class="modal-field-input visually-hidden" type="checkbox" name="user-policy" id="user-policy" required >
-            <label class="modal-checkbox-field" for="user-policy">I accept the terms and conditions of the <a href="" class="user-policy-link" >Privacy Policy</a> </label>
+          <div class="form-input-container">
+            <label class="modal-field" for="email">Email</label>
+            <input
+              class="modal-field-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <svg class="modal-field-icon" width="18" height="24">
+              <use href="./images/icons/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="form-input-container container-textarea">
+            <label class="modal-field" for="comment">Comment</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="user-policy">
+            <input
+              class="modal-field-input visually-hidden"
+              type="checkbox"
+              name="user-policy"
+              id="user-policy"
+              required
+            />
+            <label class="modal-checkbox-field" for="user-policy"
+              >I accept the terms and conditions of the
+              <a href="" class="user-policy-link">Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="modal-send-button">Send</button>
-      
-         </form>
+        </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
