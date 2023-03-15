@@ -45,7 +45,7 @@ body {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
@@ -130,7 +130,7 @@ button {
     margin-right: 119px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .logo-header {
     margin-right: 76px;
     padding-bottom: 28px;
@@ -227,13 +227,13 @@ button {
 .phone-number:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .address-list {
     display: flex;
     gap: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .address-list {
     display: flex;
     flex-direction: column;
@@ -379,7 +379,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .hero-title {
     margin: 0 auto 48px;
   }
@@ -406,10 +406,15 @@ button {
     max-width: 1440px;
     padding-top: 112px;
     padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/hero-bg-tablet.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
     padding-top: 188px;
@@ -422,7 +427,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/desktop/hero-bg-desktop.jpg);
     background-color: var(--headings-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -441,15 +446,6 @@ button {
       url(../images/mobile/hero-bg-mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/tablet/hero-bg-tablet.jpg);
-  }
-}
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -463,19 +459,9 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/desktop/hero-bg-desktop.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -521,7 +507,7 @@ button {
   padding-bottom: 96px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -532,7 +518,7 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .features-box {
     width: 264px;
     height: 112px;
@@ -562,7 +548,7 @@ button {
     gap: 24px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .section-list {
     flex-direction: row;
     gap: 24px;
@@ -582,7 +568,7 @@ button {
     text-align: left;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .section-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -597,7 +583,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .section-description {
     font-weight: 400;
     line-height: 1.5;
@@ -614,7 +600,7 @@ button {
     max-width: 356px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .features-subtitle {
     max-width: 264px;
   }
@@ -629,15 +615,66 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .features-item {
     flex-basis: calc((100% - 72px) / 4);
   }
 }
 
 /* ===========WHAT ARE WE DOING/SECTION 2======== */
-.projects {
-  padding-bottom: 120px;
+@media screen and (max-width: 1157px) {
+  .projects {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .projects {
+    padding-bottom: 120px;
+  }
+
+  .section-title {
+    margin-bottom: 72px;
+
+    color: var(--headings-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .projects-image {
+    border: 1px solid var(--subtle-background-color);
+  }
+  .projects-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+/* ===========OUR TEAM/SECTION 3======== */
+
+.team {
+  background-color: var(--team-background-color);
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 104px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-list {
+    row-gap: 64px;
+    column-gap: 24px;
+    justify-content: center;
+  }
 }
 .section-title {
   margin-bottom: 72px;
@@ -649,18 +686,25 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.projects-image {
-  border: 1px solid var(--subtle-background-color);
-}
-.projects-item {
-  flex-basis: calc((100% - 48px) / 3);
+
+.team-description {
+  padding: 32px 16px;
+  text-align: center;
 }
 
-/* ===========OUR TEAM/SECTION 3======== */
-.team {
-  background-color: var(--team-background-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+.team-subtitle {
+  margin-bottom: 8px;
+
+  color: var(--headings-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.section-description {
+  font-weight: 400;
 }
 
 .team-item {
@@ -670,13 +714,7 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-description {
-  padding: 32px 16px;
-  text-align: center;
-}
-.team-subtitle {
-  margin-bottom: 8px;
-}
+
 /* =======SOCIALS============ */
 .socials {
   display: flex;
@@ -706,22 +744,51 @@ button {
 .socials-link:focus {
   background-color: var(--accent-color);
 }
-/* .socials-icon {
-  width: 16px;
-  height: 16px;
-} */
-/* ========SECTION 4 ========== */
-.customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+.team-description .socials-icon {
+  padding: 12px;
 }
+/* ========SECTION 4 ========== */
+
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  row-gap: 72px;
+  column-gap: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+  }
+}
+
 .customers-item {
-  width: 168px;
+  flex-basis: calc((100% - 18px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .customers-item {
+    flex-basis: calc((100% - 234px) / 3);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }
 
 .customers-icon {
@@ -749,29 +816,77 @@ button {
 }
 /* =========FOOTER======================= */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
   background-color: var(--headings-color);
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 72px;
+    column-gap: 24px;
+    align-items: flex-start;
+    padding-left: 108px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-left: 15px;
+    gap: 0;
+  }
+}
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.logo-footer {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    text-align: left;
+  }
 }
 
 .logo-second {
   color: var(--team-background-color);
 }
+
 .footer-description {
-  width: 264px;
+  width: 268px;
   color: var(--subtle-background-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 16px;
 }
-.socials-container {
-  margin-left: 120px;
+@media screen and (min-width: 1158px) {
+  .socials-container {
+    margin-left: 120px;
+  }
 }
+
 .social-media-text,
 .subscribe-text {
   margin-bottom: 16px;
@@ -780,6 +895,13 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .social-media-text,
+  .subscribe-text {
+    text-align: left;
+  }
 }
 .socials-footer {
   display: flex;
@@ -787,7 +909,7 @@ button {
   gap: 16px;
 }
 
-.socials-link-footer {
+.socials-footer .socials-link {
   background-color: var(--background-color-logo-dark);
   fill: var(--subtle-background-color);
 
@@ -795,8 +917,8 @@ button {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-.socials-link-footer:hover,
-.socials-link-footer:focus {
+.socials-footer .socials-link: hover,
+.socials-footer .socials-link: focus {
   background-color: var(--footer-logo-active);
 }
 
@@ -804,17 +926,28 @@ button {
   width: 24px;
   height: 24px;
 }
-
 .subscribe-container {
-  margin-left: 80px;
+  width: 100%;
 }
-.subscribe {
-  display: flex;
-  gap: 24px;
+
+@media screen and (min-width: 1158px) {
+  .subscribe-container {
+    margin-left: 80px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
 .subscribe-email {
+  width: 100%;
   padding: 8px 16px;
-  min-width: 264px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -826,6 +959,13 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-email {
+    width: 264px;
+    margin: 0;
+  }
+}
+
 .subscribe-button {
   transition-property: background-color;
   transition-duration: 250ms;
@@ -834,6 +974,8 @@ button {
   text-align: center;
   letter-spacing: 0.04em;
 
+  justify-content: center;
+  margin: 0 auto;
   padding: 8px 24px;
   min-width: 165px;
 
@@ -845,8 +987,14 @@ button {
   border-radius: 4px;
   border-color: transparent;
 }
-.subscribe-button:hover,
-.subscribe-button:focus {
+@media screen and (min-width: 768px) {
+  .subscribe-button {
+    margin: 0;
+  }
+}
+
+.subscribe-button: hover,
+.subscribe-button: focus {
   background-color: var(--accent-color);
 }
 .icon-send {
@@ -983,7 +1131,6 @@ button {
   top: 390px;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow-y: scroll;
 
   width: 392px;
   min-height: 586px;
@@ -1001,7 +1148,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .modal {
     top: 376px;
   }
